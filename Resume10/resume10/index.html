@@ -14,19 +14,19 @@
         background-color: white;
             }
       article{
-        background-color: lightgray;
+        background-color: none;
+        background-image: url(Images/silver_pilar_background.jpg);
               }
       footer{
         background-color: lightgray;
               }
       header{
-        background-color: lightgray;
+        background-color: silver;
+        
               }
-
-
-
-
-
+      heading{
+        background-color: blue;
+      }
     </style>
 
   <!-- downloaded the bootstrap files to my local repository and
@@ -44,24 +44,36 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sapiente inventore commodi vero eveniet aliquid, provident, deserunt quia qui reprehenderit distinctio adipisci pariatur autem. Nulla iure quia ipsa architecto saepe.</p>
   </div>
 
+  </div>
+
+  <div class="b-example-divider"></div>
+
+  <div class="container">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Summary</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#footer" class="nav-link">Contact</a></li>
+      </ul>
+    </header>
+  </div>
+
+
 <!--created a div container with an article and an aside, so that my menu and content is
 in the same row and next to exch other-->  
 <div class="container">
     <div class="row">
 
-        <article class="col-sm-3">
+        <article class="col-sm-2" id="leftpilar">
           
           <h2>Menu</h2>
 
-              <ul> 
-              <li>  <a href="#education">Education</a></li>
-              <li>  <a href="#experience">Experience</a></li>    
-              <li>  <a href="#skills">Skills</a></li>
-              </ul>
  
         </article>
 
-        <Aside class="col-sm-9">
+        <Aside class="col-sm-6">
           
           <h2>Personal statement</h2>
           
@@ -69,15 +81,14 @@ in the same row and next to exch other-->
              <p>Two and a half decades of experience in healthcare administration, provides me with a clear understanding of obstacles and solutions for this industry.</p>
 
                   
-            
+             <h2 id="education">Education</h2>
       
           <h3> Code Space</h3>
             <p>Front-end and back-end development Diploma. </p>
       
           <h3> Discovery Institute</h3>
             <p>
-        <!--An unordered list with another unordered list within it-->
-              <ul>
+               <ul>
                 <li>Management Academy</li>
               <ul>
                 <li>License to Lead</li>
@@ -94,7 +105,7 @@ in the same row and next to exch other-->
             <p> Ventersdorp Highschool </p>
             <p> Maths, Accounting, Business</p>
 
-                    
+            <h2 id="experience">Experience</h2>         
 
           <h3>SpesNet Global Group</h3>
             <p>Group Executive: Business Operations</p>
@@ -114,7 +125,7 @@ in the same row and next to exch other-->
             <p>1 year</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit corporis commodi ipsa veritatis reprehenderit, architecto consequuntur in totam esse, molestias, impedit eligendi! Adipisci assumenda voluptatum debitis cupiditate nisi iure totam.</p>
         
-                    
+            <h2 id="skills">Skills</h2>        
             <p>
               <ul>
                 <li>Excel - Intermediate</li>
@@ -123,30 +134,56 @@ in the same row and next to exch other-->
                 <li>PowerBI - Advanced</li>
               </ul>
             </p>
-<!--Adding a css grid at the bottom of the main content. First I start 
-  by addind a div class in html and that then is followed div class items
-   that represents the contents of the grid-->
-
-    <h2>Hobbies</h2>
-
-    <!-- just added this section to play around with css grid and responsive
-    css for different device sizes-->
-          <div class="grid-container">
-              <div class="item1">Coding</div>
-              <div class="item2">Sport</div>
-              <div class="item3">Fishing</div>
-              <div class="item4">Hiking</div>
-              <div class="item5">Dancing</div>
-              <div class="item6">Singing</div>
-          </div>
-    
+            
+            <Aside class="col-sm-4">
       </div>
     </div>
-  </Aside>
+  </div>
+</div>
+
+<div class="modal modal-tour position-static d-block bg-secondary py-5" tabindex="-1" role="dialog" id="modalTour">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-body p-5">
+        <h2 class="fw-bold mb-0">In addition, I also code....</h2>
+
+        <ul class="d-grid gap-4 my-5 list-unstyled">
+          <li class="d-flex gap-4">
+            <svg class="bi text-muted flex-shrink-0" width="48" height="48"><use xlink:href="#grid-fill"/></svg>
+            <div>
+              <h5 class="mb-0">Web development</h5>
+              I have masterred the dark art of HTML, CSS & Bootstrap
+            </div>
+          </li>
+          <li class="d-flex gap-4">
+            <svg class="bi text-warning flex-shrink-0" width="48" height="48"><use xlink:href="#bookmark-star"/></svg>
+            <div>
+              <h5 class="mb-0">Back-end too...</h5>
+              Java script, Phyton also not new to me
+            </div>
+          </li>
+          <li class="d-flex gap-4">
+            <svg class="bi text-primary flex-shrink-0" width="48" height="48"><use xlink:href="#film"/></svg>
+            <div>
+              <h5 class="mb-0">Full-stack if you need it!</h5>
+              bla bla bla
+            </div>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-primary mt-5 w-100" 
+        data-bs-dismiss="modal">Just call me!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
 </body>
 </main>
 
 <footer class="container" id="footer">
+
+
 
    <div class="row">
     <div class="col-12 text-center" style="padding: top 30px;">

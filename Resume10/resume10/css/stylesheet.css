@@ -1,25 +1,6 @@
 
-#heading {
-    background-image: url;
-    background-size: cover;
-    background-position: center;
-    background-color: ;
-    padding: 2rem;
-    margin: 3.8rem;
-    color: black;
-            }
-
-#profilephoto {
-    
-    width: 140px;
-    height: 140px;
-    
-    border: 2px solid darkblue;
-                }
-
 footer {
     padding: 0.5rem;
-    background-color:;
     background-image: url;
     background-size: cover;
     background-position: center;
@@ -47,78 +28,11 @@ footer {
             transform: rotate(360deg);}
                             }                  
  
-/*Important to specify a size for each column*/
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 10px;
-    background-color: grey;
-    padding: 10px;
-  }
-  
-  /*Now select all the divs that are children of the class
-  The grid template columns determines your layout and can be
-  replaced by a percentage as well i.e. auto auto 30% or 5px*/
-  
-  .grid-container > div {
-    font-family: sans-serif;
-    font: size 1.5em;
-    background-color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 20px;
-    margin: 2px;
-                          }                            
-  
-  /*Now by using media quries you can style your grid
- and make sure is has logic to follow when the device
-  sizes changes*/
 
-/* large screens*/
 
- @media screen and (max-width:768px) {
-    .item1 {
-      grid-row-start: 1;
-      grid-row-end: 2;
-      grid-column-start: 1;
-      grid-column-end: 2;
-    }
-   
-   .item6 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-  }
-   
-  /* medium screens*/
   
-   @media screen and (max-width:550px) {
-    .item1 {
-      grid-row-start: 1;
-      grid-row-end: 2;
-      grid-column-start: 1;
-      grid-column-end: 2;
-    }
-   
-   .item6 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-   }
   
-   .item5 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-   }
-  } 
-  /*small screens*/
+                           
   
-  @media screen and (max-width:375px) {
-    .grid-container > div{
-      grid-column-start: 1;
-      grid-column-end: 3;
-    }
-  }                        
-  
+ 
