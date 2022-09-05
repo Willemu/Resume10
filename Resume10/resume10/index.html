@@ -18,15 +18,19 @@
         background-image: url(Images/silver_pilar_background.jpg);
               }
       footer{
-        background-color: lightgray;
+        background-color: white;
               }
       header{
         background-color: silver;
-        
               }
-      heading{
-        background-color: blue;
-      }
+              
+      .jumbotron {
+        background-size: 50%;
+        background-repeat: no-repeat;
+        height: 300px;
+        background-position: right;
+        background-color: lightgray;
+                            }
     </style>
 
   <!-- downloaded the bootstrap files to my local repository and
@@ -36,18 +40,19 @@
 
 <body>
 <!--added jumbotron for the heading and removed circle around the image-->
-  <div class="jumbotron text-center" style="margin-bottom:0" id="heading">
-    <img src="Images/profile_pic_for final.jpg" alt="willem profile pic"
-    id="profilephoto">
-
+  <div class="jumbotron text-center"
+   
+    style="background-image: url(Images/profile_pic_blackandwhite.jpg);"
+     id="heading">
+     
     <h1>Willem Uys</h1>
       <p>I’m a positive, deadline driven individual that that can manage multiple projects simultaneously, solve complex problems, is always willing to take on new challenges and drive solutions.</p>
+   </div>
   </div>
-
-  </div>
-<!--added a nac bar and linked each heading to go to the relevant section when the user
+  
+<!--added a nav bar and linked each heading to go to the relevant section when the user
 clicks on it-->
-  <div class="b-example-divider"></div>
+  <div class="navbar"></div>
 
   <div class="container">
     <header class="navbar navbar-expand-lg navbar-light bg-light">
