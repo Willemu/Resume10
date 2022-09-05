@@ -25,12 +25,13 @@
               }
               
       .jumbotron {
-        background-size: 50%;
-        background-repeat: no-repeat;
+        background-size: 25%;
         height: 300px;
         background-position: right;
         background-color: lightgray;
+        color: white;
                             }
+      
     </style>
 
   <!-- downloaded the bootstrap files to my local repository and
@@ -52,11 +53,11 @@
   
 <!--added a nav bar and linked each heading to go to the relevant section when the user
 clicks on it-->
-  <div class="navbar"></div>
+  <div class="navbar">
 
   <div class="container">
-    <header class="navbar navbar-expand-lg navbar-light bg-light">
-      <ul class="nav nav-pills">
+    <header class="navbar navbar-dark bg-dark text-white">
+      <ul class="nav col-12">
         <li class="nav-item"><a href="#summary" class="nav-link active" aria-current="page">Summary</a></li>
         <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
         <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
@@ -65,7 +66,7 @@ clicks on it-->
       </ul>
     </header>
   </div>
-
+</div>
 
 <!--created a div container with an article and an aside, so that my menu and content is
 in the same row and next to exch other-->  
@@ -129,12 +130,12 @@ in the same row and next to exch other-->
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit corporis commodi ipsa veritatis reprehenderit, architecto consequuntur in totam esse, molestias, impedit eligendi! Adipisci assumenda voluptatum debitis cupiditate nisi iure totam.</p>
         
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal">
   Call me now!
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -155,7 +156,7 @@ in the same row and next to exch other-->
 </div>
          
 <!-- Added a card to display skills -->
-            <Aside class="col-sm-10">
+           <Aside class="col-sm-10">
               <div class="card mb-3" style="max-width: 540px;">
                 <div class="row no-gutters">
                   <div class="col-md-4 bg-dark">
